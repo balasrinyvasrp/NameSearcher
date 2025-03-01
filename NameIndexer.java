@@ -14,7 +14,7 @@ public class NameIndexer {
     ));
 
     public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
-        String filePath = "data.txt"; // Update this path
+        String filePath = "data.txt"; // Update this path to match with Local path
         int chunkSize = 1000; // Number of lines per chunk
         ExecutorService executor = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
         List<Future<Map<String, List<Location>>>> futures = new ArrayList<>();
